@@ -13,7 +13,8 @@
     "test": "vitest run",
     "model": "tsx model/cli.ts",
     "model:xlsx": "tsx model/build-xlsx.ts",
-    "model:validate": "tsx model/validate.ts"
+    "model:validate": "tsx model/validate.ts",
+    "build:local": "node scripts/build-local.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
