@@ -9,7 +9,7 @@ export function SectionLabel({ children, className = '' }: { children: ReactNode
 
 export function Panel({ children, className = '', title, right }: { children: ReactNode; className?: string; title?: ReactNode; right?: ReactNode }) {
   return (
-    <section className={`panel p-4 ${className}`}>
+    <section className={`panel p-4 min-w-0 ${className}`}>
       {(title || right) && (
         <header className="flex items-baseline justify-between gap-3 mb-3">
           {title && <div className="label mb-0">{title}</div>}
@@ -109,7 +109,7 @@ export function Tag({ children, tone = 'slate' }: { children: ReactNode; tone?: 
 
 export function Table({ children, minWidth }: { children: ReactNode; minWidth?: number }) {
   return (
-    <div className="table-scroll">
+    <div className="table-scroll min-w-0">
       <table style={minWidth ? { minWidth } : undefined}>{children}</table>
     </div>
   );
