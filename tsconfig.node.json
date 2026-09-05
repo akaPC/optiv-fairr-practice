@@ -14,5 +14,5 @@
     "noUnusedParameters": true,
     "types": ["node"]
   },
-  "include": ["vite.config.ts", "model/cli.ts", "model/build-xlsx.ts", "model/validate.ts", "model/input-meta.ts", "model/fairr-model.ts", "model/write-assumptions.ts"]
+  "include": ["vite.config.ts", "vitest.config.ts", "model/cli.ts", "model/build-xlsx.ts", "model/validate.ts", "model/input-meta.ts", "model/fairr-model.ts", "model/write-assumptions.ts"]
 }
